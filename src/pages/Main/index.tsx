@@ -1,13 +1,14 @@
 import React from "react";
 import GNB from "@components/GNB";
 import * as S from "./style";
+import SearchBar from "@components/SearchBar";
 
 const Main = () => {
   return (
     <>
       <S.MainBanner>
         <GNB />
-        {/* <SearchBar /> */}
+        <SearchBar />
       </S.MainBanner>
 
       <S.MainContents>

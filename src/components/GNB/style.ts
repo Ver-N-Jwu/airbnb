@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import ACCOUNT_ICON from "@assets/account-icon.svg";
 
 export const GNB = styled.nav`
   display: flex;

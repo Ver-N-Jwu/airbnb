@@ -14,6 +14,12 @@ module.exports = {
     "plugin:prettier/recommended",
   ],
   rules: {
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
+      },
+    ],
     "@typescript-eslint/no-var-requires": 0,
   },
   settings: {

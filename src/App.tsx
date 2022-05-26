@@ -1,11 +1,17 @@
 import React from "react";
-import GNB from "@components/GNB/GNB";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Main from "@pages/Main";
+import SearchResult from "@pages/SearchResult";
 
 function App() {
   return (
-    <div className="App">
-      <GNB></GNB>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Main />} />
+        <Route path="/searchResult" element={<SearchResult />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 

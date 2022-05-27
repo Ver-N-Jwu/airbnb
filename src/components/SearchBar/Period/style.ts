@@ -6,6 +6,7 @@ export const Period = styled.div`
   align-items: center;
   width: 361px;
   height: 76px;
-  padding: 16px 24px 16px 40px;
+  padding: 0 24px 0 40px;
+  border-radius: 60px;
   cursor: pointer;
 `;

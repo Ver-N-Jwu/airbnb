@@ -6,7 +6,8 @@ export const Personnel = styled.div`
   align-items: center;
   width: 298px;
   height: 76px;
-  padding: 16px 16px;
+  padding: 0 16px;
+  border-radius: 60px;
   cursor: pointer;
 `;
 

@@ -6,6 +6,6 @@ export const Price = styled.div`
   align-items: center;
   width: 257px;
   height: 76px;
-  padding: 16px 24px;
+  padding: 0 24px;
   cursor: pointer;
 `;

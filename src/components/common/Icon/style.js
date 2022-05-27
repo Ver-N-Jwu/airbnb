@@ -1,13 +1,6 @@
 import styled, { css } from "styled-components";
 
-// type StyleProps = {
-//   size: string;
-//   iconSize: object;
-// };
-
-// if size={"base"}
-
-const styleSize = css`
+const sizeStyles = css`
   ${({ size, theme: { iconSize } }) =>
     iconSize[size] &&
     css`
@@ -18,5 +11,5 @@ const styleSize = css`
 
 export const Icon = styled.figure`
   cursor: pointer;
-  ${styleSize}
+  ${sizeStyles}
 `;

@@ -1,7 +1,8 @@
+import ACCOUNT_ICON from "@assets/account-icon.svg";
 import Icon from "@components/common/Icon";
 import React from "react";
+
 import * as S from "./style";
-import ACCOUNT_ICON from "@assets/account-icon.svg";
 
 const GNB = () => {
   return (

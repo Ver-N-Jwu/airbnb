@@ -6,7 +6,7 @@ module.exports = {
     node: true,
   },
   parser: "@typescript-eslint/parser",
-  plugins: ["react", "@typescript-eslint", "prettier"],
+  plugins: ["react", "@typescript-eslint", "simple-import-sort", "prettier"],
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -21,6 +21,8 @@ module.exports = {
       },
     ],
     "@typescript-eslint/no-var-requires": 0,
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
   },
   settings: {
     react: {

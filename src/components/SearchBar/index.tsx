@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+
 import Period from "./Period";
 import Personnel from "./Personnel";
 import Price from "./Price";
 import * as S from "./style";
 
 const SearchBar = () => {
+  const [modalOpen, setModalOpen] = useState(0); //1 2 3
+
   return (
     <S.SearchBar>
-      <Period />
+      <Period modalOpen={modalOpen} setModalOpen={setModalOpen} />
       <Block />
-      <Price />
+      <Price modalOpen={modalOpen} setModalOpen={setModalOpen} />
       <Block />
-      <Personnel />
+      <Personnel modalOpen={modalOpen} setModalOpen={setModalOpen} />
     </S.SearchBar>
   );
 };

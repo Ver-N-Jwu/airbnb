@@ -1,17 +1,31 @@
-import Icon from "@components/common/Icon";
-import TextBox from "@components/common/TextBox";
-import React from "react";
-import * as S from "./style";
 import SEARCH_ICON from "@assets/search-icon.svg";
 import X_ICON from "@assets/x-icon.svg";
+import Icon from "@components/common/Icon";
+import Modal from "@components/common/Modal";
+import TextBox from "@components/common/TextBox";
+import React from "react";
 
-const Personnel = () => {
+import * as S from "./style";
+
+interface props {
+  modalOpen: number;
+  setModalOpen: React.Dispatch<React.SetStateAction<number>>;
+}
+
+const Personnel = ({ modalOpen, setModalOpen }: props) => {
+  const onClickHandler = () => {
+    setModalOpen(3);
+  };
+
   return (
-    <S.Personnel>
-      <TextBox label={`인원`} text={`게스트 추가`} />
-      <Icon iconName={X_ICON} iconSize={"base"} />
-      <SearchButton />
-    </S.Personnel>
+    <>
+      <S.Personnel onClick={onClickHandler}>
+        <TextBox label={`인원`} text={`게스트 추가`} />
+        <Icon iconName={X_ICON} iconSize={"base"} />
+        <SearchButton />
+      </S.Personnel>
+      {modalOpen === 3 && <Modal setModalOpen={setModalOpen}>Personnel</Modal>}
+    </>
   );
 };
 

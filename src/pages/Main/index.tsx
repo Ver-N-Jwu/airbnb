@@ -1,7 +1,8 @@
-import React from "react";
 import GNB from "@components/GNB";
-import * as S from "./style";
 import SearchBar from "@components/SearchBar";
+import React from "react";
+
+import * as S from "./style";
 
 const Main = () => {
   return (

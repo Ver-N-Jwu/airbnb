@@ -2,7 +2,6 @@ import X_ICON from "@assets/x-icon.svg";
 import Icon from "@components/common/Icon";
 import Modal from "@components/common/Modal";
 import TextBox from "@components/common/TextBox";
-import React from "react";
 
 import * as S from "./style";
 
@@ -29,7 +28,6 @@ const Period = ({ modalOpen, setModalOpen }: props) => {
 };
 
 // useModal()
-
 
 const CheckIn = () => {
   return <TextBox label={`체크인`} text={`날짜 입력`} />;

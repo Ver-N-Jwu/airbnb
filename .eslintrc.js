@@ -5,34 +5,68 @@ module.exports = {
     es6: true,
     node: true,
   },
+  settings: {
+    "import/parsers": { "@typescript-eslint/parser": [".ts", ".tsx"] },
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
+      typescript: {
+        alwaysTryTypes: true,
+      },
+    },
+    react: {
+      version: "detect",
+    },
+  },
   parser: "@typescript-eslint/parser",
   parserOptions: {
     sourceType: "module",
+    project: "./tsconfig.json",
+    tsconfigRootDir: "./",
   },
-  plugins: ["react", "@typescript-eslint", "simple-import-sort", "import", "prettier"],
+  plugins: ["react", "@typescript-eslint", "import", "prettier"],
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
+    "plugin:import/recommended",
     "plugin:prettier/recommended",
   ],
   rules: {
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-var-requires": 0,
+    "import/no-unresolved": "off",
     "prettier/prettier": [
       "error",
       {
         endOfLine: "auto",
       },
     ],
-    "@typescript-eslint/no-var-requires": 0,
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
-    "import/first": "error",
-    "import/newline-after-import": "error",
-    "import/no-duplicates": "error",
-  },
-  settings: {
-    react: {
-      version: "detect",
-    },
+    // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order.md 참조
+    "import/order": [
+      "error",
+      {
+        groups: ["builtin", "external", "internal", ["parent", "sibling"], "index", "object", "type"],
+        pathGroups: [
+          {
+            pattern: "react",
+            group: "builtin",
+            position: "before",
+          },
+          {
+            pattern: "@*/**",
+            group: "internal",
+            position: "after",
+          },
+        ],
+        "newlines-between": "always",
+        alphabetize: { order: "asc", caseInsensitive: true },
+        warnOnUnassignedImports: true,
+        pathGroupsExcludedImportTypes: [],
+      },
+    ],
   },
 };

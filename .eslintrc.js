@@ -6,7 +6,10 @@ module.exports = {
     node: true,
   },
   parser: "@typescript-eslint/parser",
-  plugins: ["react", "@typescript-eslint", "simple-import-sort", "prettier"],
+  parserOptions: {
+    sourceType: "module",
+  },
+  plugins: ["react", "@typescript-eslint", "simple-import-sort", "import", "prettier"],
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -23,6 +26,9 @@ module.exports = {
     "@typescript-eslint/no-var-requires": 0,
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
   },
   settings: {
     react: {

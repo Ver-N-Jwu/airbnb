@@ -1,6 +1,5 @@
 import GNB from "@components/GNB";
 import SearchBar from "@components/SearchBar";
-import React from "react";
 
 import * as S from "./style";
 

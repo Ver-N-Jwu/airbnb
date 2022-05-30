@@ -3,7 +3,6 @@ import X_ICON from "@assets/x-icon.svg";
 import Icon from "@components/common/Icon";
 import Modal from "@components/common/Modal";
 import TextBox from "@components/common/TextBox";
-import React from "react";
 
 import * as S from "./style";
 

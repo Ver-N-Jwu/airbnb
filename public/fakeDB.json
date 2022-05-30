@@ -1,0 +1,294 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "maxGuest": 4,
+      "name": "코드스쿼드",
+      "address": "서울특별시 강남구 역삼동",
+      "detailAddress": "",
+      "latitude": 37.49784,
+      "longitude": 127.03029,
+      "roomType": "집 전체",
+      "roomCount": 1,
+      "bedCount": 1,
+      "bathroomCount": 1,
+      "rating": 4.82,
+      "reviewCount": 137,
+      "originalPrice": 80000,
+      "salePrice": 72000,
+      "badge": "슈퍼호스트",
+      "thumbnails": [
+        "https://a0.muscache.com/im/pictures/c45d08e5-f560-44f0-83fc-83290ccd1670.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/e3258341-b4f3-4988-b958-bec903936a0b.jpg?im_w=720"
+      ],
+      "options": {
+        "kitchen": true,
+        "wifi": true,
+        "airConditioner": true,
+        "freeParkingLot": true,
+        "hairDryer": true
+      }
+    },
+    {
+      "id": 2,
+      "maxGuest": 16,
+      "name": "Gang nam●Roof Top● 100평 Terrace & BBQ",
+      "address": "서울특별시 강남구 역삼동",
+      "detailAddress": "",
+      "latitude": 37.49289058854854,
+      "longitude": 127.03593087059619,
+      "roomType": "집 전체",
+      "roomCount": 4,
+      "bedCount": 7,
+      "bathroomCount": 3,
+      "rating": 4.6,
+      "reviewCount": 198,
+      "originalPrice": 160000,
+      "salePrice": 140000,
+      "badge": "슈퍼호스트",
+      "thumbnails": [
+        "https://a0.muscache.com/im/pictures/746a6a9e-73f3-4efa-8167-7c05916a9240.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/6e0f2f52-f7fd-411b-87df-8a25a3c6f37e.jpg?im_w=720"
+      ],
+      "options": {
+        "kitchen": true,
+        "wifi": true,
+        "airConditioner": true,
+        "freeParkingLot": true,
+        "hairDryer": true
+      }
+    },
+    {
+      "id": 3,
+      "maxGuest": 10,
+      "name": "강남역3분!!#30평#넓은거실#큰방 5인실#중간방 3인실#실외베란다",
+      "address": "서울특별시 강남구 역삼동",
+      "detailAddress": "",
+      "latitude": 37.4950687,
+      "longitude": 127.0314118,
+      "roomType": "집 전체",
+      "roomCount": 2,
+      "bedCount": 2,
+      "bathroomCount": 1,
+      "rating": 4.9,
+      "reviewCount": 10,
+      "originalPrice": 250000,
+      "salePrice": 225000,
+      "badge": "",
+      "thumbnails": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-5…bf3ded7-dfb1-4935-bf5c-be1848bea786.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/f649aacd-f27c-4acb-8acb-fe77d645ac47.jpg?im_w=720"
+      ],
+      "options": {
+        "kitchen": true,
+        "wifi": true,
+        "airConditioner": true,
+        "freeParkingLot": true,
+        "hairDryer": true
+      }
+    },
+    {
+      "id": 4,
+      "maxGuest": 1,
+      "name": "강남역 5분 역삼 레지던스 1",
+      "address": "서울특별시 강남구 역삼동",
+      "detailAddress": "",
+      "latitude": 37.4953942,
+      "longitude": 127.0336343,
+      "roomType": "개인실",
+      "roomCount": 1,
+      "bedCount": 1,
+      "bathroomCount": 1,
+      "rating": 4.07,
+      "reviewCount": 15,
+      "originalPrice": 15000,
+      "salePrice": 15000,
+      "badge": "",
+      "thumbnails": [
+        "https://a0.muscache.com/im/pictures/f0b807a0-e2bd-4fd4-8ddb-6bfd5789bb36.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/9c1ee89a-bfb0-4f6c-8856-60770fad6f28.jpg?im_w=720"
+      ],
+      "options": {
+        "kitchen": true,
+        "wifi": false,
+        "airConditioner": true,
+        "freeParkingLot": false,
+        "hairDryer": false
+      }
+    },
+    {
+      "id": 5,
+      "maxGuest": 4,
+      "name": "[장기숙박가능]'적정온도' #강남역1분",
+      "address": "서울특별시 강남구 역삼1동",
+      "detailAddress": "",
+      "latitude": 37.4964982,
+      "longitude": 127.0296973,
+      "roomType": "집 전체",
+      "roomCount": 1,
+      "bedCount": 1,
+      "bathroomCount": 1,
+      "rating": 4.81,
+      "reviewCount": 31,
+      "originalPrice": 127000,
+      "salePrice": 125000,
+      "badge": "슈퍼호스트",
+      "thumbnails": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-5…ed027d5-ac87-47fd-ba6f-d2becb03305e.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-5…31a9e43-0c79-4f5b-801f-45b509abd4ed.jpeg?im_w=720"
+      ],
+      "options": {
+        "kitchen": true,
+        "wifi": true,
+        "airConditioner": true,
+        "freeParkingLot": false,
+        "hairDryer": true
+      }
+    },
+    {
+      "id": 6,
+      "maxGuest": 3,
+      "name": "[오픈할인🎉]'디오니소스'#조명맛집",
+      "address": "서울특별시 강남구 역삼동",
+      "detailAddress": "",
+      "latitude": 37.4970809,
+      "longitude": 127.0286186,
+      "roomType": "집 전체",
+      "roomCount": 1,
+      "bedCount": 1,
+      "bathroomCount": 1,
+      "rating": 4.5,
+      "reviewCount": 4,
+      "originalPrice": 100000,
+      "salePrice": 100000,
+      "badge": "슈퍼호스트",
+      "thumbnails": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-5…cd85fb7-2fd3-4603-9d63-cd0074375259.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-5…68046b2-1907-48ad-8989-70fb34f3c520.jpeg?im_w=720"
+      ],
+      "options": {
+        "kitchen": true,
+        "wifi": true,
+        "airConditioner": true,
+        "freeParkingLot": true,
+        "hairDryer": true
+      }
+    },
+    {
+      "id": 7,
+      "maxGuest": 4,
+      "name": "Gangnam stn exit #1, 1mins, New Spacious Room",
+      "address": "서울특별시 강남구 역삼2동",
+      "detailAddress": "",
+      "latitude": 37.4978497,
+      "longitude": 27.0280032,
+      "roomType": "집 전체",
+      "roomCount": 1,
+      "bedCount": 1,
+      "bathroomCount": 1.5,
+      "rating": 4.5,
+      "reviewCount": 4,
+      "originalPrice": 85000,
+      "salePrice": 80000,
+      "badge": "",
+      "thumbnails": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-5…6737976-c3e2-46f2-bb78-97938038598e.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-5…eaa0e98-5d9f-48b7-9892-975b0cf623b7.jpeg?im_w=720"
+      ],
+      "options": {
+        "kitchen": true,
+        "wifi": true,
+        "airConditioner": true,
+        "freeParkingLot": false,
+        "hairDryer": true
+      }
+    },
+    {
+      "id": 8,
+      "maxGuest": 2,
+      "name": "6 강남역 30초 올나잇 파티룸☆",
+      "address": "서울특별시 서초구 서초동",
+      "detailAddress": "",
+      "latitude": 37.4964212,
+      "longitude": 127.027788,
+      "roomType": "집 전체",
+      "roomCount": 1,
+      "bedCount": 1,
+      "bathroomCount": 1,
+      "rating": 5.0,
+      "reviewCount": 6,
+      "originalPrice": 150000,
+      "salePrice": 100000,
+      "badge": "",
+      "thumbnails": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-5…81aa60c-348b-4c97-a76a-e0d6e0c6e706.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-5…0fc15ce-6bed-430c-a630-cbadf4c57fe8.jpeg?im_w=720"
+      ],
+      "options": {
+        "kitchen": true,
+        "wifi": true,
+        "airConditioner": true,
+        "freeParkingLot": false,
+        "hairDryer": false
+      }
+    },
+    {
+      "id": 9,
+      "maxGuest": 10,
+      "name": "#강남역파티룸#노을맛집 단독영화관 #브라이더샤워",
+      "address": "서울특별시 서초구 서초동",
+      "detailAddress": "",
+      "latitude": 37.4968977,
+      "longitude": 127.0275567,
+      "roomType": "집 전체",
+      "roomCount": 1,
+      "bedCount": 1,
+      "bathroomCount": 1,
+      "rating": 4.3,
+      "reviewCount": 27,
+      "originalPrice": 150000,
+      "salePrice": 150000,
+      "badge": "",
+      "thumbnails": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-6…c4594e4-6c69-4e9c-98c9-cd660b9ccffa.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-6…74eddc8-212f-4129-a355-398d4209e0b2.jpeg?im_w=720"
+      ],
+      "options": {
+        "kitchen": true,
+        "wifi": true,
+        "airConditioner": true,
+        "freeParkingLot": true,
+        "hairDryer": true
+      }
+    },
+    {
+      "id": 10,
+      "maxGuest": 8,
+      "name": "5 강남역 30초 올나잇 파티룸☆영화 온라인 콘서트★",
+      "address": "서울특별시 서초구 서초동",
+      "detailAddress": "",
+      "latitude": 37.4949929,
+      "longitude": 127.0279943,
+      "roomType": "집 전체",
+      "roomCount": 1,
+      "bedCount": 1,
+      "bathroomCount": 1,
+      "rating": 4.9,
+      "reviewCount": 48,
+      "originalPrice": 197000,
+      "salePrice": 150000,
+      "badge": "슈퍼호스트",
+      "thumbnails": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-6…4131e99-3adb-4076-9c96-c661dbe05d71.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-6…e90d543-ca33-4760-9f4e-6bd64a82773e.jpeg?im_w=720"
+      ],
+      "options": {
+        "kitchen": true,
+        "wifi": true,
+        "airConditioner": true,
+        "freeParkingLot": true,
+        "hairDryer": true
+      }
+    }
+  ]
+}

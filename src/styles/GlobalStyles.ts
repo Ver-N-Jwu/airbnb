@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
 	${fonts}
 
 	body {
-		font-family: "Noto Sans KR";
+		font-family: "Noto Sans KR", sans-serif;
 		font-size: ${({ theme }) => theme.fontSize.base};
 		color: ${({ theme }) => theme.color.black};
 		width: ${({ theme }) => theme.layout.heroImgWidth};

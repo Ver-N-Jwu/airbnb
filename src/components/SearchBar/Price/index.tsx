@@ -46,7 +46,7 @@ const PriceRangeGraph = () => {
   const priceArray: number[] = [];
 
   const mockArray = [
-    { x: 15000, y: 5 },
+    { x: 15000, y: 50 },
     { x: 30000, y: 14 },
     { x: 50000, y: 10 },
     { x: 70000, y: 14 },
@@ -86,14 +86,16 @@ const PriceRangeGraph = () => {
     if (!context) return;
     const x_max = Math.max(...mockArray.map((coordinate) => coordinate.x));
     const y_max = Math.max(...mockArray.map((coordinate) => coordinate.y));
-    const x_divide = x_max / 365;
-    const y_divide = y_max / 100;
+    const x_divide = x_max / 365; //canvas width
+    const y_divide = y_max / 100; //canvas height
     const coordinates = mockArray.map((coordinate) => {
       return { x: coordinate.x / x_divide, y: 100 - coordinate.y / y_divide };
     });
 
+    console.log(coordinates);
+
     context?.beginPath();
-    context?.moveTo(coordinates[0].x, coordinates[0].y);
+    context?.moveTo(0, 100); //(0, canvas height)
     console.log(coordinates[0].x, coordinates[0].y);
     context.strokeStyle = "lightgray";
     context.fillStyle = "black";

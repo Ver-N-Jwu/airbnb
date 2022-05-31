@@ -1,4 +1,5 @@
 import X_ICON from "@assets/x-icon.svg";
+import Calendar from "@components/Calendar";
 import Icon from "@components/common/Icon";
 import Modal from "@components/common/Modal";
 import TextBox from "@components/common/TextBox";
@@ -22,7 +23,11 @@ const Period = ({ modalOpen, setModalOpen }: props) => {
         <CheckOut />
         <Icon iconName={X_ICON} iconSize={"base"} />
       </S.Period>
-      {modalOpen === 1 && <Modal setModalOpen={setModalOpen}>Calendar</Modal>}
+      {modalOpen === 1 && (
+        <Modal setModalOpen={setModalOpen}>
+          <Calendar />
+        </Modal>
+      )}
     </>
   );
 };

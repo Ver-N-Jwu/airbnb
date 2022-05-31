@@ -14,7 +14,7 @@ const GNB = () => {
 };
 
 const Logo = () => {
-  return <S.Logo>LOGO</S.Logo>;
+  return <S.Logo>에어비앤비</S.Logo>;
 };
 
 const CategoryTab = () => {

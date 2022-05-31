@@ -4,9 +4,12 @@
     "paths": {
       "@components/*": ["components/*"],
       "@constants/*": ["constants/*"],
+      "@contexts/*": ["contexts/*"],
       "@styles/*": ["styles/*"],
       "@pages/*": ["pages/*"],
-      "@assets/*": ["assets/*"]
+      "@assets/*": ["assets/*"],
+      "@utils/*": ["utils/*"],
+      "@hooks/*": ["hooks/*"]
     }
   }
 }

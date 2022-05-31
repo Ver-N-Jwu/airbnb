@@ -4,7 +4,7 @@ const fontSize = {
   base: "16px",
   large: "18px",
   larger: "20px",
-  logo: "24px",
+  logo: "48px",
 };
 
 const fontWeight = {
@@ -26,6 +26,7 @@ const color = {
 };
 
 const iconSize = {
+  small: "12px",
   base: "24px",
   large: "30px",
   account: "76px",

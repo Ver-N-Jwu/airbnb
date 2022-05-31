@@ -7,6 +7,7 @@ import Modal from "@components/common/Modal";
 import TextBox from "@components/common/TextBox";
 
 import * as S from "./style";
+
 interface props {
   modalOpen: number;
   setModalOpen: React.Dispatch<React.SetStateAction<number>>;

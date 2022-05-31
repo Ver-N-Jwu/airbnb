@@ -8,6 +8,7 @@ export const GNB = styled.nav`
 `;
 
 export const Logo = styled.h3`
+  font-family: "Dongle";
   font-size: ${({ theme }) => theme.fontSize.logo};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   cursor: default;

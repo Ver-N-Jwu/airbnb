@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
+import PAUSE_ICON from "@assets/pause-icon.svg";
 import X_ICON from "@assets/x-icon.svg";
 import Icon from "@components/common/Icon";
 import Modal from "@components/common/Modal";
@@ -30,7 +31,6 @@ const Price = ({ modalOpen, setModalOpen }: props) => {
       {modalOpen === 2 && (
         <Modal setModalOpen={setModalOpen}>
           <PriceRangeGraph />
-          <Slider />
         </Modal>
       )}
     </>
@@ -41,6 +41,10 @@ const PriceRangeGraph = () => {
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(0);
   const [average, setAverage] = useState(0);
+
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const canvas = canvasRef.current as HTMLCanvasElement;
+  const context = canvas?.getContext("2d");
 
   //데이터 받는 로직 임시 주석화
   // const priceArray: number[] = [];
@@ -68,27 +72,40 @@ const PriceRangeGraph = () => {
     }
   }, []);
 
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const canvas = canvasRef.current as HTMLCanvasElement;
-  const context = canvas?.getContext("2d");
-
   drawGraph(context, mockArray);
-  // const drawRange() => { }
 
   return (
     <>
-      {/* TODO: Description 컴포넌트로 변경 */}
-      <div>가격 범위</div>
       <div>
-        {minPrice} - {maxPrice}
+        {/* TODO: Description 컴포넌트로 변경 */}
+        <div>가격 범위</div>
+        <div>
+          {minPrice} - {maxPrice}
+        </div>
+        <div>평균 1박 요금은 {average}원 입니다.</div>
+        {/* TODO: Description 컴포넌트로 변경 */}
+
+        <canvas width="365" height="100" ref={canvasRef} />
+        <Slider min={minPrice} max={maxPrice} />
       </div>
-      <div>평균 1박 요금은 {average}원 입니다.</div>
-      <canvas width="365" height="100" ref={canvasRef} />
     </>
   );
 };
 
-const Slider = () => {};
+interface sliderProps {
+  min: number;
+  max: number;
+}
+
+const Slider = ({ min, max }: sliderProps) => {
+  // const onChangeHandlerMin = () => {};
+  return (
+    <S.Slider>
+      <S.LeftInput type="range" min={min} max={max} />
+      <S.RightInput type="range" min={min} max={max} />
+    </S.Slider>
+  );
+};
 
 const getData = async (url: string) => {
   const data = await fetch(url);

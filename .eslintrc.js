@@ -23,7 +23,7 @@ module.exports = {
   parserOptions: {
     sourceType: "module",
     project: "./tsconfig.json",
-    tsconfigRootDir: "./",
+    tsconfigRootDir: __dirname,
   },
   plugins: ["react", "@typescript-eslint", "import", "prettier"],
   extends: [

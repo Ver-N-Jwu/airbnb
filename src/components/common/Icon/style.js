@@ -11,5 +11,6 @@ const sizeStyles = css`
 
 export const Icon = styled.figure`
   cursor: pointer;
+  z-index: 2;
   ${sizeStyles}
 `;

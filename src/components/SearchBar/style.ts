@@ -11,3 +11,9 @@ export const SearchBar = styled.div`
   margin: 0 auto;
   background-color: ${({ theme }) => theme.color.white};
 `;
+
+export const Block = styled.div`
+  width: 1px;
+  height: 44px;
+  border-right: 1px solid ${({ theme }) => theme.color.gray5};
+`;

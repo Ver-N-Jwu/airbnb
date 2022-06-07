@@ -1,16 +1,18 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import CalendarProvider from "@contexts/CalendarProvider";
+import SearchModalProvider from "@contexts/SearchModalProvider";
 import Main from "@pages/Main";
 import NotFound from "@pages/NotFound";
 import SearchResult from "@pages/SearchResult";
-import { ComposedProivider } from "@utils/";
+
+import { ComposedProvider } from "./utils";
 
 const Providers = [CalendarProvider];
 
 function App() {
   return (
-    <ComposedProivider components={Providers}>
+    <ComposedProvider components={Providers}>
       <BrowserRouter>
         <Routes basename={process.env.PUBLIC_URL}>
           <Route index element={<Main />} />
@@ -18,7 +20,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
-    </ComposedProivider>
+    </ComposedProvider>
   );
 }
 

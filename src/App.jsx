@@ -13,7 +13,7 @@ const Providers = [CalendarProvider, PriceProvider];
 
 function App() {
   return (
-    <ComposedProvider components={Providers}>
+    <CalendarProvider>
       <BrowserRouter>
         <Routes basename={process.env.PUBLIC_URL}>
           <Route index element={<Main />} />
@@ -21,7 +21,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
-    </ComposedProvider>
+    </CalendarProvider>
   );
 }
 

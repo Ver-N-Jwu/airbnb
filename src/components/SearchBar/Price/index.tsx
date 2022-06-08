@@ -12,6 +12,7 @@ import * as S from "./style";
 
 const Price = () => {
   const priceElement = useRef(null);
+  const { openedModal } = useSearchModalState();
   const { onOpenSearchModal, onCloseSearchModal } = useSearchModalDispatch();
   const { priceRange } = usePriceState();
   const [text, setText] = useState<string | null>(null);

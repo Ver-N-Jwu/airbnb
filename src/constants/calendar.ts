@@ -12,5 +12,6 @@ export enum CalendarTypes {
   ALL_REMOVE,
 }
 
-export const CALENDAR_PAGE = 2;
+// Calendar
+export const CALENDAR_PAGE = 4;
 export const HALF_MOVE_POINT = 50;

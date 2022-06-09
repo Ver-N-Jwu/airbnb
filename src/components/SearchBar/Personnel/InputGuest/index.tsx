@@ -1,8 +1,8 @@
 import React from "react";
 
-import { InputGuestType } from "_types/inputGuest";
-
 import { useInputGuestState, useInputGuestDispatch } from "@contexts/InputGuestProvider";
+
+import { InputGuestType } from "_types/inputGuest";
 
 import * as S from "./style";
 

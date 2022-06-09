@@ -37,7 +37,7 @@ export type Rooms = {
   rooms: ResponseType;
 };
 
-const useFetch = <T>({ method, url, options }: FetchProps): { response: T | null; error: unknown } => {
+export const useFetch = <T>({ method, url, options }: FetchProps): { response: T | null; error: unknown } => {
   const [response, setResponse] = useState(null);
   const [error, setError] = useState(null);
   useEffect(() => {
@@ -62,5 +62,3 @@ const useFetch = <T>({ method, url, options }: FetchProps): { response: T | null
 
   return { response, error };
 };
-
-export default useFetch;

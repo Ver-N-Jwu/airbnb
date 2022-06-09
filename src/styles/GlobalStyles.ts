@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
 	${fonts}
 
 	html {
+		background-color: ${({ theme }) => theme.color.white};
 		margin: 0;
 		padding: 0;
 	}
@@ -32,7 +33,6 @@ const GlobalStyles = createGlobalStyle`
 
 	button {
 		cursor: pointer;
-
 	}
 
 	a {

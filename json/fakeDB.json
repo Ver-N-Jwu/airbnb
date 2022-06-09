@@ -2,23 +2,23 @@
   "rooms": [
     {
       "id": 1,
-      "maxGuest": 4,
+      "maxGuest": 400,
       "name": "코드스쿼드",
       "address": "서울특별시 강남구 역삼동",
       "detailAddress": "",
       "latitude": 37.49784,
       "longitude": 127.03029,
       "roomType": "집 전체",
-      "roomCount": 1,
-      "bedCount": 1,
-      "bathroomCount": 1,
-      "rating": 4.82,
-      "reviewCount": 137,
-      "originalPrice": 80000,
-      "salePrice": 72000,
+      "roomCount": 20,
+      "bedCount": 40,
+      "bathroomCount": 10,
+      "rating": 5.0,
+      "reviewCount": 9999,
+      "originalPrice": 50000000,
+      "salePrice": 50000000,
       "badge": "슈퍼호스트",
       "thumbnails": [
-        "https://a0.muscache.com/im/pictures/c45d08e5-f560-44f0-83fc-83290ccd1670.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/84addbd7-69ce-4e8b-b339-494a53443499.jpg?im_w=720",
         "https://a0.muscache.com/im/pictures/e3258341-b4f3-4988-b958-bec903936a0b.jpg?im_w=720"
       ],
       "options": {
@@ -76,7 +76,7 @@
       "salePrice": 225000,
       "badge": "",
       "thumbnails": [
-        "https://a0.muscache.com/im/pictures/miso/Hosting-5…bf3ded7-dfb1-4935-bf5c-be1848bea786.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/f2008547-9d11-44be-9948-fdac905ebbf9.jpg?im_w=720",
         "https://a0.muscache.com/im/pictures/f649aacd-f27c-4acb-8acb-fe77d645ac47.jpg?im_w=720"
       ],
       "options": {
@@ -134,7 +134,7 @@
       "salePrice": 125000,
       "badge": "슈퍼호스트",
       "thumbnails": [
-        "https://a0.muscache.com/im/pictures/miso/Hosting-5…ed027d5-ac87-47fd-ba6f-d2becb03305e.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-51240398/original/dc343c3a-81d1-4617-8962-32e95f9030ca.jpeg?im_w=720",
         "https://a0.muscache.com/im/pictures/miso/Hosting-5…31a9e43-0c79-4f5b-801f-45b509abd4ed.jpeg?im_w=720"
       ],
       "options": {
@@ -163,7 +163,7 @@
       "salePrice": 100000,
       "badge": "슈퍼호스트",
       "thumbnails": [
-        "https://a0.muscache.com/im/pictures/miso/Hosting-5…cd85fb7-2fd3-4603-9d63-cd0074375259.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/3a74b0fb-cf0d-400d-913f-cfdd3175c98d.jpg?im_w=720",
         "https://a0.muscache.com/im/pictures/miso/Hosting-5…68046b2-1907-48ad-8989-70fb34f3c520.jpeg?im_w=720"
       ],
       "options": {
@@ -192,7 +192,7 @@
       "salePrice": 80000,
       "badge": "",
       "thumbnails": [
-        "https://a0.muscache.com/im/pictures/miso/Hosting-5…6737976-c3e2-46f2-bb78-97938038598e.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/443a11ee-d616-471e-a723-bd8be24468ee.jpg?im_w=720",
         "https://a0.muscache.com/im/pictures/miso/Hosting-5…eaa0e98-5d9f-48b7-9892-975b0cf623b7.jpeg?im_w=720"
       ],
       "options": {
@@ -221,7 +221,7 @@
       "salePrice": 100000,
       "badge": "",
       "thumbnails": [
-        "https://a0.muscache.com/im/pictures/miso/Hosting-5…81aa60c-348b-4c97-a76a-e0d6e0c6e706.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/aaddce0a-9b2f-4583-bc20-4dfc089229cf.jpg?im_w=720",
         "https://a0.muscache.com/im/pictures/miso/Hosting-5…0fc15ce-6bed-430c-a630-cbadf4c57fe8.jpeg?im_w=720"
       ],
       "options": {
@@ -250,7 +250,7 @@
       "salePrice": 150000,
       "badge": "",
       "thumbnails": [
-        "https://a0.muscache.com/im/pictures/miso/Hosting-6…c4594e4-6c69-4e9c-98c9-cd660b9ccffa.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/2ba2ebb2-5cd1-471b-be63-e6076cccdb6a.jpg?im_w=720",
         "https://a0.muscache.com/im/pictures/miso/Hosting-6…74eddc8-212f-4129-a355-398d4209e0b2.jpeg?im_w=720"
       ],
       "options": {
@@ -279,7 +279,7 @@
       "salePrice": 150000,
       "badge": "슈퍼호스트",
       "thumbnails": [
-        "https://a0.muscache.com/im/pictures/miso/Hosting-6…4131e99-3adb-4076-9c96-c661dbe05d71.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/c99e5b00-a779-40e9-bd0e-5062dfdb7eb8.jpg?im_w=720",
         "https://a0.muscache.com/im/pictures/miso/Hosting-6…e90d543-ca33-4760-9f4e-6bd64a82773e.jpeg?im_w=720"
       ],
       "options": {

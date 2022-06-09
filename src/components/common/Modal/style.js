@@ -6,7 +6,7 @@ export const Modal = styled.div`
   border-radius: 40px;
   top: 76px;
   right: 0;
-  z-index: 1;
+  z-index: 3;
   background-color: ${({ theme }) => theme.color.white};
   padding: 64px;
   margin-top: 16px;

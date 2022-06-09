@@ -1,6 +1,5 @@
 import GNB from "@components/GNB";
 import SearchBar from "@components/SearchBar";
-import SearchModalProvider from "@contexts/SearchModalProvider";
 
 import * as S from "./style";
 
@@ -9,9 +8,7 @@ const Main = () => {
     <>
       <S.MainBanner>
         <GNB />
-        <SearchModalProvider>
-          <SearchBar />
-        </SearchModalProvider>
+        <SearchBar />
       </S.MainBanner>
 
       <S.MainContents>

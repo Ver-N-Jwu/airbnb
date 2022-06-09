@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import ACCOUNT_ICON from "@assets/account-icon.svg";
 import Icon from "@components/common/Icon";
 
@@ -14,7 +16,11 @@ const GNB = () => {
 };
 
 const Logo = () => {
-  return <S.Logo>에어비앤비</S.Logo>;
+  return (
+    <Link to="/">
+      <S.Logo>에어비앤비</S.Logo>
+    </Link>
+  );
 };
 
 const CategoryTab = () => {

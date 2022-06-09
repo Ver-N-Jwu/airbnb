@@ -5,13 +5,14 @@ export const RoomItem = styled.div`
   justify-content: space-between;
   width: 100%;
   height: 248px;
-  padding: 24px;
-  background-color: white;
+  padding: 12px;
+  background-color: ${({ theme }) => theme.color.white};
 
   & + & {
     border-top: 1px solid ${({ theme }) => theme.color.gray5};
   }
 `;
+
 export const Photo = styled.figure`
   width: 330px;
   border-radius: 5px;

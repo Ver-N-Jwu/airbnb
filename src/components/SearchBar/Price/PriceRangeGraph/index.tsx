@@ -28,13 +28,6 @@ export const PriceRangeGraph = () => {
 
   return (
     <>
-      {/* TODO: Description 컴포넌트로 변경 */}
-      {/* <div>가격 범위</div>
-      <div>
-        {minPrice} - {maxPrice}
-      </div>
-      <div>평균 1박 요금은 {average}원 입니다.</div> */}
-      {/* TODO: Description 컴포넌트로 변경 */}
       <GraphDescription minPrice={minPrice} maxPrice={maxPrice} average={average} />
 
       <S.GraphContainer>

@@ -1,7 +1,5 @@
 import React, { useCallback, useRef, useState, useMemo } from "react";
 
-import { DirectionType } from "_types/calendar";
-
 import NEXT_BUTTON from "@assets/nextButton.svg";
 import PREV_BUTTON from "@assets/prevButton.svg";
 import Icon from "@components/common/Icon";
@@ -9,6 +7,8 @@ import CalendarPage from "@components/SearchBar/Period/Calendar/CalendarPage";
 import { CALENDAR_PAGE, HALF_MOVE_POINT } from "@constants/calendar";
 import { useCalendarState } from "@contexts/CalendarProvider";
 import { getDirectionValue, getMonthDifference } from "@utils/calendar";
+
+import { DirectionType } from "_types/calendar";
 
 import * as S from "./style";
 

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-import { CalendarInfoType } from "_types/calendar";
-
 import DateItem from "@components/SearchBar/Period/Calendar/DateItem";
 import { getDate } from "@utils/calendar";
+
+import { CalendarInfoType } from "_types/calendar";
 
 import * as S from "./style";
 

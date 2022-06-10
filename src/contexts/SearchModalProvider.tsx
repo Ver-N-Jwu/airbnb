@@ -1,66 +1,25 @@
-import { createContext, useContext, useMemo, useReducer, useCallback } from "react";
+import { useState, createContext, useContext } from "react";
 
-import { SearchModalActionType, SearchModalDispatches, SearchModalState, SearchModalType } from "_types/searchModal";
-
-const reducer = (state: SearchModalState, action: SearchModalActionType): SearchModalState => {
-  if (action.type === state.openedModal) {
-    return state;
-  }
-
-  switch (action.type) {
-    case "PERIOD":
-      return { openedModal: "PERIOD" };
-
-    case "PRICE":
-      return { openedModal: "PRICE" };
-
-    case "PERSONNEL":
-      return { openedModal: "PERSONNEL" };
-
-    case "OFF":
-      return { openedModal: null };
-
-    default:
-      return state;
-  }
-};
+import { SearchModalDispatches, SearchModalState } from "_types/searchModal";
 
 const SearchModalStateContext = createContext<SearchModalState | null>(null);
 const SearchModalDispatchContext = createContext<SearchModalDispatches | null>(null);
 
-const initialState = {
-  openedModal: null,
-};
+const initialState = null;
 
 const SearchModalProvider = ({ children }: { children?: React.ReactNode }) => {
-  const [searchModal, dispatch] = useReducer(reducer, initialState);
-
-  const onOpenSearchModal = useCallback((modalParam: SearchModalType) => {
-    dispatch({ type: modalParam });
-  }, []);
-
-  const onCloseSearchModal = useCallback(() => {
-    dispatch({ type: "OFF" });
-  }, []);
-
-  const dispatches = useMemo(
-    () => ({
-      onOpenSearchModal,
-      onCloseSearchModal,
-    }),
-    [onCloseSearchModal, onOpenSearchModal],
-  );
+  const [searchModal, setSearchModal] = useState(initialState);
 
   return (
     <SearchModalStateContext.Provider value={searchModal}>
-      <SearchModalDispatchContext.Provider value={dispatches}>{children}</SearchModalDispatchContext.Provider>
+      <SearchModalDispatchContext.Provider value={setSearchModal}>{children}</SearchModalDispatchContext.Provider>
     </SearchModalStateContext.Provider>
   );
 };
 
 export const useSearchModalState = () => {
   const state = useContext(SearchModalStateContext);
-  if (!state) throw new Error("Cannot find SearchModalProvider");
+  // if (!state) throw new Error("Cannot find SearchModalProvider");
   return state;
 };
 

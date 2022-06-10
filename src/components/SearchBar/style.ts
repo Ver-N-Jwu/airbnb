@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components";
 
-import { SearchModalType } from "../../types/searchModal";
+import { SearchModalState } from "../../types/searchModal";
 
-export const SearchBar = styled.div<{ openedModal?: SearchModalType | null }>`
+export const SearchBar = styled.div<{ openedModal?: SearchModalState | null }>`
   display: flex;
   position: relative;
   align-items: center;

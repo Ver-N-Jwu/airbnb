@@ -8,7 +8,7 @@ import * as S from "./style";
 
 const Modal = ({ children }) => {
   const modalRef = useRef(null);
-  const { onCloseSearchModal } = useSearchModalDispatch();
+  const setSearchModal = useSearchModalDispatch();
 
   const outsideClickHandler = useCallback((e) => {
     if (e.target.dataset.button === "REMOVE") {
@@ -16,7 +16,7 @@ const Modal = ({ children }) => {
     }
 
     if (!modalRef.current?.contains(e.target)) {
-      onCloseSearchModal();
+      setSearchModal(null);
     }
   }, []);
 

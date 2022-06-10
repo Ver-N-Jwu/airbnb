@@ -18,7 +18,7 @@ const GNB = () => {
 const Logo = () => {
   return (
     <Link to="/">
-      <S.Logo>에어비앤비</S.Logo>
+      <S.Logo>에어비엔비</S.Logo>
     </Link>
   );
 };

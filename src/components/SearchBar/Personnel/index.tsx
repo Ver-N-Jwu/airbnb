@@ -10,13 +10,14 @@ import { useInputGuestState, useInputGuestDispatch } from "@contexts/InputGuestP
 import { usePriceState } from "@contexts/PriceProvider";
 import { useSearchModalDispatch, useSearchModalState } from "@contexts/SearchModalProvider";
 
+import InputGuest from "./InputGuest/index";
 import * as S from "./style";
 
 export const Personnel = () => {
   const personnelElement = useRef(null);
 
-  const { openedModal } = useSearchModalState();
-  const { onOpenSearchModal } = useSearchModalDispatch();
+  const searchModal = useSearchModalState();
+  const setSearchModal = useSearchModalDispatch();
 
   const { adult, child, baby } = useInputGuestState();
   const { onResetGuest } = useInputGuestDispatch();
@@ -34,7 +35,7 @@ export const Personnel = () => {
   };
 
   return (
-    <S.Personnel onClick={() => onOpenSearchModal("PERSONNEL")} openedModal={openedModal} ref={personnelElement}>
+    <S.Personnel onClick={() => setSearchModal(<InputGuest />)} openedModal={searchModal} ref={personnelElement}>
       <TextBox label="인원" placeholder="게스트 추가" textContent={getGuestContentTemplate()} />
       {!!adult && <Icon onClick={handleCloseGuestModal} data-button="REMOVE" iconName={X_ICON} iconSize="base" />}
       <SearchButton />

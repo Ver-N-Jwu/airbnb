@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components";
 
-import { SearchModalType } from "../../../types/searchModal";
+import { SearchModalState } from "_types/searchModal";
 
-export const Period = styled.div<{ openedModal?: SearchModalType | null }>`
+export const Period = styled.div<{ openedModal?: SearchModalState | null }>`
   display: flex;
   justify-content: flex-start;
   align-items: center;

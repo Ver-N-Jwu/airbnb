@@ -4,8 +4,8 @@ import { reset } from "styled-reset";
 import fonts from "./fonts";
 
 const GlobalStyles = createGlobalStyle` 
-	${reset}
 	${fonts}
+	${reset}
 
 	html {
 		background-color: ${({ theme }) => theme.color.white};

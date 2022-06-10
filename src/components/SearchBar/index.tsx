@@ -1,33 +1,30 @@
 import React from "react";
 
 import Modal from "@components/common/Modal";
-import Calendar from "@components/SearchBar/Period/Calendar";
-import InputGuest from "@components/SearchBar/Personnel/InputGuest";
 import { useSearchModalState } from "@contexts/SearchModalProvider";
 
 import Period from "./Period";
 import Personnel from "./Personnel";
 import Price from "./Price";
-import { PriceRangeGraph } from "./Price/PriceRangeGraph";
 import * as S from "./style";
 
-const SEARCH_BAR = {
-  PERIOD: <Calendar />,
-  PRICE: <PriceRangeGraph />,
-  PERSONNEL: <InputGuest />,
-};
+// const SEARCH_BAR = {
+//   PERIOD: <Calendar />,
+//   PRICE: <PriceRangeGraph />,
+//   PERSONNEL: <InputGuest />,
+// };
 
 const SearchBar = () => {
-  const { openedModal } = useSearchModalState();
+  const searchModal = useSearchModalState();
 
   return (
-    <S.SearchBar openedModal={openedModal}>
+    <S.SearchBar openedModal={searchModal}>
       <Period />
       <S.Block />
       <Price />
       <S.Block />
       <Personnel />
-      {openedModal && <Modal>{SEARCH_BAR[openedModal]}</Modal>}
+      {searchModal && <Modal>{searchModal}</Modal>}
     </S.SearchBar>
   );
 };

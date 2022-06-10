@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components";
 
-import { SearchModalType } from "_types/searchModal";
+import { SearchModalState } from "_types/searchModal";
 
-export const Personnel = styled.div<{ openedModal?: SearchModalType | null }>`
+export const Personnel = styled.div<{ openedModal?: SearchModalState | null }>`
   display: flex;
   justify-content: space-between;
   align-items: center;

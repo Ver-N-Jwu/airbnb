@@ -45,10 +45,9 @@ export const useFetch = <T>({ method, url, options }: FetchProps): { response: T
       try {
         const res = await fetch(url, {
           method: method,
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
+          // headers: {
+          //   "Content-Type": "application/json",
+          // },
           ...options,
         });
         const json = await res.json();

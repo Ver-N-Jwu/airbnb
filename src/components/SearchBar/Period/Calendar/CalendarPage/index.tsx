@@ -1,8 +1,10 @@
 import React from "react";
 
-import CalendarDate from "@components/SearchBar/Period/Calendar/CalendarDate";
+import DateItem from "@components/SearchBar/Period/Calendar/DateItem";
 import { DAY_OF_WEEK } from "@constants/calendar";
-import { getCalendarArray } from "@utils/calendar";
+import { getCalendarArray, getDate } from "@utils/calendar";
+
+import { CalendarInfoType } from "_types/calendar";
 
 import * as S from "./style";
 
@@ -36,6 +38,19 @@ const CalendarDay = () => {
         </S.DayItem>
       ))}
     </S.CalendarDay>
+  );
+};
+
+const CalendarDate = ({ calendarInfo }: { calendarInfo: CalendarInfoType }) => {
+  const { calendarArray, year, month } = calendarInfo;
+
+  return (
+    <S.CalendarDate>
+      {calendarArray.map((date: number, index) => {
+        const currDate = getDate(year, month, date);
+        return <DateItem currDate={currDate} date={date} key={currDate.getTime() + index} />;
+      })}
+    </S.CalendarDate>
   );
 };
 

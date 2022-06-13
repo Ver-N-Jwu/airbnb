@@ -6,6 +6,6 @@ export const kakaoMapScript = ({ latitude, longitude, level }) => {
     center: new kakao.maps.LatLng(latitude, longitude),
     level: level,
   };
-  const map = new kakao.maps.Map(container, options);
+  const map = new kakao.maps.Map(container, options) ?? null;
   return map;
 };

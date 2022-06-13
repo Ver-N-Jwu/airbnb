@@ -9,11 +9,11 @@ type LatLonType = {
   latitude: number;
   longitude: number;
 };
-const 코드스쿼드좌표: LatLonType = { latitude: 37.4909, longitude: 127.0334 };
+const CODESQUAD_POS: LatLonType = { latitude: 37.4909, longitude: 127.0334 };
 
 const Map = () => {
   useEffect(() => {
-    const map = kakaoMapScript({ latitude: 코드스쿼드좌표.latitude, longitude: 코드스쿼드좌표.longitude, level: 3 });
+    const map = kakaoMapScript({ latitude: CODESQUAD_POS.latitude, longitude: CODESQUAD_POS.longitude, level: 3 });
     moveEvent(map);
   }, []);
 

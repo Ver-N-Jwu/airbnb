@@ -27,6 +27,8 @@ export const CalendarDay = styled.div`
   color: ${({ theme }) => theme.color.gray3};
 `;
 
+export const CalendarDate = styled(CalendarDay)``;
+
 export const DayItem = styled.div<{ day: string }>`
   display: flex;
   justify-content: center;

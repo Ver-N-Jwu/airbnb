@@ -14,33 +14,34 @@ import NotFound from "@pages/NotFound";
 import SearchResult from "@pages/SearchResult";
 import GlobalStyles from "@styles/GlobalStyles";
 import { lightTheme, darkTheme } from "@styles/theme";
+import { compose } from "@utils/compose";
+
+const Provider = compose([
+  SearchResultProvider,
+  CalendarProvider,
+  PriceProvider,
+  InputGuestProvider,
+  SearchModalProvider,
+]);
 
 function App() {
   const [theme, toggleTheme] = useDarkMode();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
   return (
-    <SearchResultProvider>
-      <CalendarProvider>
-        <PriceProvider>
-          <InputGuestProvider>
-            <SearchModalProvider>
-              <ThemeProvider theme={themeMode}>
-                <GlobalStyles />
-                <BrowserRouter basename={process.env.PUBLIC_URL}>
-                  <ToggleThemeButton iconName={DARK_MODE_ICON} iconSize="large" onClick={toggleTheme} />
-                  <Routes>
-                    <Route index exact path="/" element={<Main toggleTheme={toggleTheme} />} />
-                    <Route path="/searchResult" element={<SearchResult toggleTheme={toggleTheme} />} />
-                    <Route path="*" element={<NotFound />} />
-                  </Routes>
-                </BrowserRouter>
-              </ThemeProvider>
-            </SearchModalProvider>
-          </InputGuestProvider>
-        </PriceProvider>
-      </CalendarProvider>
-    </SearchResultProvider>
+    <Provider>
+      <ThemeProvider theme={themeMode}>
+        <GlobalStyles />
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+          <ToggleThemeButton iconName={DARK_MODE_ICON} iconSize="large" onClick={toggleTheme} />
+          <Routes>
+            <Route index exact path="/" element={<Main toggleTheme={toggleTheme} />} />
+            <Route path="/searchResult" element={<SearchResult toggleTheme={toggleTheme} />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </ThemeProvider>
+    </Provider>
   );
 }
 

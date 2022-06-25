@@ -36,7 +36,6 @@ function App() {
           <ToggleThemeButton iconName={DARK_MODE_ICON} iconSize="large" onClick={toggleTheme} />
           <Routes>
             <Route index exact path="/" element={<Main toggleTheme={toggleTheme} />} />
-            <Route path="/searchResult" element={<SearchResult toggleTheme={toggleTheme} />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

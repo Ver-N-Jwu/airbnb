@@ -1,8 +1,5 @@
 import React, { createContext, Dispatch, useContext, useState } from "react";
 
-const SearchResultStateContext = createContext<SearchResultStateType[] | null>(null);
-const SearchResultDispatchContext = createContext<Dispatch<React.SetStateAction<SearchResultStateType[]>> | null>(null);
-
 export type SearchResultStateType = {
   id: number;
   maxGuest: number;
@@ -31,6 +28,9 @@ export type SearchResultStateType = {
 };
 
 const initialState = [] as SearchResultStateType[];
+
+const SearchResultStateContext = createContext<SearchResultStateType[] | null>(initialState);
+const SearchResultDispatchContext = createContext<Dispatch<React.SetStateAction<SearchResultStateType[]>> | null>(null);
 
 const SearchResultProvider = ({ children }: { children?: React.ReactNode }) => {
   const [searchResult, setSearchResult] = useState<SearchResultStateType[] | null>(initialState);

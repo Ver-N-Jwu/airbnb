@@ -1,6 +1,4 @@
-export type InputGuestState = {
-  [key in InputGuestType]: number;
-};
+export type InputGuestState = Record<InputGuestType, number>;
 
 export type InputGuestType = "adult" | "child" | "baby";
 

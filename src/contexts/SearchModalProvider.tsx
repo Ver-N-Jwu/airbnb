@@ -2,10 +2,10 @@ import { useState, createContext, useContext } from "react";
 
 import { SearchModalDispatches, SearchModalState } from "_types/searchModal";
 
-const SearchModalStateContext = createContext<SearchModalState | null>(null);
-const SearchModalDispatchContext = createContext<SearchModalDispatches | null>(null);
+const initialState = {} as SearchModalState;
 
-const initialState = null;
+const SearchModalStateContext = createContext<SearchModalState | null>(initialState);
+const SearchModalDispatchContext = createContext<SearchModalDispatches | null>(null);
 
 const SearchModalProvider = ({ children }: { children?: React.ReactNode }) => {
   const [searchModal, setSearchModal] = useState(initialState);

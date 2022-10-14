@@ -2,7 +2,7 @@ import { createContext, useContext, useMemo, useReducer, useCallback } from "rea
 
 import { InputGuestActionType, InputGuestDispatches, InputGuestState, InputGuestType } from "_types/inputGuest";
 
-const reducer = (state: InputGuestState, action: InputGuestActionType) => {
+const reducer = (state: InputGuestState, action: InputGuestActionType): InputGuestState => {
   switch (action.type) {
     case "INCREASE_GUEST":
       return { ...state, [action.guestType]: state[action.guestType] + 1 };
@@ -18,8 +18,8 @@ const reducer = (state: InputGuestState, action: InputGuestActionType) => {
   }
 };
 
-const InputGuestStateContext = createContext<InputGuestState | null>({} as InputGuestState);
-const InputGuestDispatchContext = createContext<InputGuestDispatches | null>({} as InputGuestDispatches);
+const InputGuestStateContext = createContext<InputGuestState | null>(null);
+const InputGuestDispatchContext = createContext<InputGuestDispatches | null>(null);
 
 const initialState = {
   adult: 0,

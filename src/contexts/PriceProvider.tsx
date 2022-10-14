@@ -1,15 +1,5 @@
 import React, { createContext, useContext, useState } from "react";
 
-export type PriceTypes = {
-  minPrice: number;
-  maxPrice: number;
-};
-
-export type PriceContextProps = {
-  priceRange?: null | PriceTypes;
-  setPriceRange?: (priceRange: PriceTypes | null) => void;
-};
-
 const PriceStateContext = createContext<PriceContextProps | null>(null);
 const PriceDispatchContext = createContext<PriceContextProps | null>(null);
 
@@ -21,6 +11,16 @@ const PriceProvider = ({ children }: { children?: React.ReactNode }) => {
       <PriceDispatchContext.Provider value={{ setPriceRange }}>{children}</PriceDispatchContext.Provider>
     </PriceStateContext.Provider>
   );
+};
+
+export type PriceTypes = {
+  minPrice: number;
+  maxPrice: number;
+};
+
+export type PriceContextProps = {
+  priceRange?: null | PriceTypes;
+  setPriceRange?: (priceRange: PriceTypes | null) => void;
 };
 
 export const usePriceState = () => {
